@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apineed-claude-opus-5"
+version = "0.1.0"
+description = "Access Claude Opus 5 via OpenAI-compatible endpoints with 1,000,000 tokens (1M context), real-time streaming (SSE), multimodal support, and up to 50% lower cost than Anthropic Claude (Official). Ready for LangChain, LlamaIndex, LiteLLM, and Cursor."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">= 3.8"
+authors = [
+    {name = "APINEED", email = "support@apineed.com"},
+]
+keywords = ["claude-opus-5", "claude-opus-5-api", "openai-compatible", "llm", "python", "ai-agent", "langchain", "streaming", "chatgpt-alternative", "large-language-models", "multimodal", "vision-language-model", "claude", "anthropic-claude", "claude-api"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+openai = [
+    "openai>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://apineed.com/models/claude-opus-5"
+Repository = "https://github.com/Apineed/claude-opus-5-api"
+Documentation = "https://github.com/Apineed/claude-opus-5-api#readme"
+"Bug Tracker" = "https://github.com/Apineed/claude-opus-5-api/issues"
